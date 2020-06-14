@@ -1,0 +1,57 @@
+h1 {
+  font-family: Arial;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+}
+
+h2 {
+  font-family: Arial;
+  font-size: 13px;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-family: Georgia;
+  font-size: 13px;
+}
+
+h5 {
+    font-family: Verdana;
+     font-size: 10px;
+      font-weight: bold;
+}
+
+hr {
+  height: 2px;
+  border-width: 0;
+  color: gray;
+  background-color: gray;
+}
+
+p {
+  font-family: Tahoma;
+  font-size: 11px;
+}
+
+p.italic {
+  font-family: Georgia;
+  font-style: italic;
+  font-size: 12px;
+}
+
+p.formula {
+    font-family: Arial; font-size: 13px;
+}
+
+p.article {
+    font-family: Arial; font-size: 13px; text-align: justify;
+}
+
+ol {
+  font-family: Tahoma;
+  font-size: 11px;
+  text-transform: capitalize;
+}
