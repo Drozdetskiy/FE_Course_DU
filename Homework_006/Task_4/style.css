@@ -1,0 +1,16 @@
+body {
+    background-image: url('images/yellow-bokeh-photo-949587.jpg');
+    background-size: cover;
+    opacity: 50%;
+}
+
+.wrapper {
+    position: absolute;
+    top: 35;
+    left: 25;
+}
+
+img.wrapped {
+    width: 20%;
+    position: fixed;
+}

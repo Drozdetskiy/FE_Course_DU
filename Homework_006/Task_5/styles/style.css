@@ -1,0 +1,130 @@
+body {
+  font-family: "RobotoRegular";
+}
+
+.main-info-container {
+  background-color: #393f47;
+  color: #fff;
+  overflow: hidden;
+  padding: 113px 0 129px;
+  position: relative;
+}
+
+.main-info-container-vertical-line {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #2f343a;
+  width: 442px;
+  z-index: 0;
+  margin: 0 auto;
+}
+
+.main-info-wrapper {
+  position: relative;
+  width: 1110px;
+  margin: auto;
+}
+
+.clearfix {
+  clear: both;
+}
+
+.main-info-description {
+  width: 415px;
+  float: left;
+}
+
+.main-info-line {
+  width: 90px;
+  height: 6px;
+  background-color: #c8a35f;
+  border: 0;
+  outline: 0;
+  text-align: left;
+  margin-bottom: 37px;
+}
+
+.main-info-head {
+  font-family: RobotoRegular;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 49px;
+  letter-spacing: 0.05em;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+.main-info-text {
+  font-family: RobotoRegular;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 28px;
+  color: #ffffff;
+}
+.main-info-button {
+  width: 220px;
+  height: 55px;
+  background-color: #c8a35f;
+  text-decoration: none;
+  font-family: "RobotoRegular";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 55px;
+  text-align: center;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: white;
+  display: block;
+}
+
+.main-info-image {
+  float: left;
+  padding: 53px 0 0 60px;
+}
+.main-info-arrows {
+  float: left;
+}
+
+.main-info-arrow {
+  font-family: "RobotoRegular";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 25px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #c8a35f;
+  position: absolute;
+  right: -15px;
+}
+
+.icon-arrow {
+  display: block;
+  width: 67px;
+  height: 24px;
+}
+
+.icon-arrow-next {
+  background-image: url(../images/icon-arrow-next.png);
+}
+
+.icon-arrow-prev {
+  background-image: url(../images/icon-arrow-prev.png);
+}
+
+.main-info-arrow span {
+  float: left;
+  margin: 0 15px;
+}
+
+.arrow-next {
+  top: 42px;
+}
+
+.arrow-prev {
+  bottom: -11px;
+}
