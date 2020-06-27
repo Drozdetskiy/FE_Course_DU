@@ -1,0 +1,77 @@
+<html>
+  <head>
+    <title>Sign up form</title>
+    <meta name="author" content="Mikhail Drozdetskiy" />
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="container">
+      <form action="post">
+        <div class="wrap-input">
+          <label for="inputlogin">Login</label>
+          <input class="input" type="text" id="inputlogin" name="login" />
+          <div class="clearfix"></div>
+        </div>
+        <div class="wrap-input">
+          <label for="inputname">Name</label>
+          <input class="input" type="text" id="inputname" name="name" />
+          <div class="clearfix"></div>
+        </div>
+        <div class="wrap-input">
+          <label for="inputsurname">Surname</label>
+          <input class="input" type="text" id="inputsurname" name="surname" />
+          <div class="clearfix"></div>
+        </div>
+        <div class="wrap-input">
+          <label for="inputbddate">Birthday</label>
+          <input class="input" type="date" id="inputbddate" name="birthday" />
+          <div class="clearfix"></div>
+        </div>
+        <div class="wrap-input">
+          <label for="inputm">Man</label>
+          <input
+            name="radio-sex"
+            class="input"
+            type="radio"
+            id="inputm"
+            value="M"
+            checked="checked"
+          />
+          <div class="clearfix"></div>
+          <label for="inputw">Woman</label>
+          <input
+            name="radio-sex"
+            class="input"
+            type="radio"
+            id="inputw"
+            value="W"
+          />
+          <div class="clearfix"></div>
+        </div>
+        <div class="wrap-input">
+          <label for="inputpassword">Password</label>
+          <input
+            class="input"
+            type="password"
+            id="inputpassword"
+            name="password"
+          />
+          <div class="clearfix"></div>
+        </div>
+        <div class="wrap-input">
+          <label for="confirmpassword">Confirm Password</label>
+          <input
+            class="input"
+            type="password"
+            id="confirmpassword"
+            name="confirmpassword"
+          />
+          <div class="clearfix"></div>
+        </div>
+        <div>
+          <input type="submit" value="Sign In" />
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

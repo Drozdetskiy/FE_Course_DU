@@ -1,0 +1,25 @@
+.container {
+  width: 400px;
+  padding: 15px;
+  background: #f2f2f2;
+  margin: auto;
+}
+
+.wrap-input {
+  width: 100%;
+  border-bottom: 2px solid #adadad;
+  margin-bottom: 37px;
+}
+
+.input {
+  font-size: 15px;
+  color: #555555;
+  line-height: 1.2;
+  width: 50%;
+  height: 45px;
+  float: right;
+}
+
+.clearfix {
+  clear: both;
+}
