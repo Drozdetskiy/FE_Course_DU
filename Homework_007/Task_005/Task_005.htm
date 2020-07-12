@@ -1,0 +1,129 @@
+<html>
+  <head>
+    <title>Course form</title>
+    <meta name="author" content="Mikhail Drozdetskiy" />
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="container">
+      <form action="post">
+        <div class="wrap-input">
+          <label for="inputname">Name</label>
+          <input class="input" type="text" id="inputname" maxlength="50" />
+          <div class="clearfix"></div>
+        </div>
+        <div class="wrap-input">
+          <label for="inputsurname">Surname</label>
+          <input class="input" type="text" id="inputsurname" maxlength="50" />
+          <div class="clearfix"></div>
+        </div>
+        <div class="wrap-input">
+          <label for="inputsecondname">Second Name</label>
+          <input
+            class="input"
+            type="text"
+            id="inputsecondname"
+            maxlength="50"
+          />
+          <div class="clearfix"></div>
+        </div>
+        <div class="wrap-input">
+          <label for="inputm">Man</label>
+          <input
+            name="radio-sex"
+            class="input"
+            type="radio"
+            id="inputm"
+            value="M"
+            checked="checked"
+          />
+          <div class="clearfix"></div>
+          <label for="inputw">Woman</label>
+          <input
+            name="radio-sex"
+            class="input"
+            type="radio"
+            id="inputw"
+            value="W"
+          />
+          <div class="clearfix"></div>
+        </div>
+        <div class="wrap-input">
+          <label for="coursetype">Name</label>
+          <select class="select" name="coursetype" id="coursetype">
+            <option value="c#essential">C# Essencial</option>
+            <option value="c#professional">C# Professional</option>
+            <option value="html">HTML</option>
+            <option value="css">CSS</option>
+            <option value="javascript">JavaScript</option>
+            <option value="jquery">jQuery</option>
+          </select>
+          <div class="clearfix"></div>
+        </div>
+        <div class="wrap-input">
+          <label for="checkc#essential">C# Essencial</label>
+          <input
+            id="checkc#essential"
+            class="input"
+            type="checkbox"
+            value="c#essential"
+          />
+          <div class="clearfix"></div>
+        </div>
+        <div class="wrap-input">
+          <label for="checkc#professional">C# Professional</label>
+          <input
+            id="checkc#professional"
+            class="input"
+            type="checkbox"
+            value="c#professional"
+          />
+          <div class="clearfix"></div>
+        </div>
+        <div class="wrap-input">
+          <label for="checkhtml">HTML</label>
+          <input id="checkhtml" class="input" type="checkbox" value="html" />
+          <div class="clearfix"></div>
+        </div>
+        <div class="wrap-input">
+          <label for="checkcss">CSS</label>
+          <input id="checkcss" class="input" type="checkbox" value="css" />
+          <div class="clearfix"></div>
+        </div>
+
+        <div class="wrap-input">
+          <label for="checkjavascript">JavaScript</label>
+          <input
+            id="checkjavascript"
+            class="input"
+            type="checkbox"
+            value="javascript"
+          />
+          <div class="clearfix"></div>
+        </div>
+        <div class="wrap-input">
+          <label for="checkjquery">jQuery</label>
+          <input
+            id="checkjquery"
+            class="input"
+            type="checkbox"
+            value="jquery"
+          />
+          <div class="clearfix"></div>
+        </div>
+        <div class="wrap-input">
+          <label for="adddata">Additional Data</label>
+          <textarea
+            class="textareainput"
+            type=""
+            id="adddata"
+            cols="10"
+          ></textarea>
+          <div class="clearfix"></div>
+        </div>
+        <input type="submit" name="submit" value="Submit" />
+        <input type="reset" name="reset" value="Reset" />
+      </form>
+    </div>
+  </body>
+</html>
