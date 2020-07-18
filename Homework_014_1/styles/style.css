@@ -26,38 +26,12 @@
     position: relative;
     padding: 0 40px 16px;
 }
-.navbar .navbar__options .navbar__option .navbar__suboptions {
+.navbar .navbar__options .navbar__option .suboptions {
     display: none;
     position: absolute;
-    justify-content: center;
     top: 100%;
     min-width: 100%;
     left: 0;
-    padding-top: 16px;
-    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
-}
-.navbar
-    .navbar__options
-    .navbar__option
-    .navbar__suboptions
-    .navbar__suboption {
-    padding: 16px 20px 16px;
-    text-align: center;
-}
-.navbar
-    .navbar__options
-    .navbar__option
-    .navbar__suboptions
-    .navbar__suboption:hover {
-    background-color: #dfe3ef;
-}
-.navbar
-    .navbar__options
-    .navbar__option
-    .navbar__suboptions
-    .navbar__suboption:hover
-    > .heading-text {
-    color: #2f343a;
 }
 .navbar .navbar__options .navbar__option:hover {
     cursor: pointer;
@@ -66,10 +40,26 @@
 .navbar .navbar__options .navbar__option:hover > .heading-text {
     color: #2f343a;
 }
-.navbar .navbar__options .navbar__option:hover .navbar__suboptions,
-.navbar .navbar__options .navbar__option:hover .navbar__suboptions:hover {
+.navbar .navbar__options .navbar__option:hover .suboptions,
+.navbar .navbar__options .navbar__option:hover .suboptions:hover {
     display: block;
     animation: scaling 0.3s;
+}
+
+.suboptions {
+    justify-content: center;
+    padding-top: 16px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+}
+.suboptions .suboptions__option {
+    padding: 16px 20px 16px;
+    text-align: center;
+}
+.suboptions .suboptions__option:hover {
+    background-color: #dfe3ef;
+}
+.suboptions .suboptions__option:hover > .heading-text {
+    color: #2f343a;
 }
 
 @keyframes scaling {

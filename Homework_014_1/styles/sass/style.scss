@@ -55,35 +55,39 @@ $heading-text-color: #597bae;
         #{ $self }__option {
             position: relative;
             padding: 0 $nav-padding-horizontal $nav-padding-vertical;
-            #{ $self }__suboptions {
+            .suboptions {
                 display: none;
                 position: absolute;
-                justify-content: center;
                 top: 100%;
                 min-width: 100%;
                 left: 0;
-                padding-top: $nav-padding-vertical;
-                @include shadow;
-                #{ $self }__suboption {
-                    padding: $nav-padding-vertical $nav-padding-horizontal / 2
-                        $nav-padding-vertical;
-                    text-align: center;
-                    &:hover {
-                        background-color: $select-background-color;
-                        @include heading-text-select;
-                    }
-                }
             }
             &:hover {
                 cursor: pointer;
                 @include selected-box-underline;
                 @include heading-text-select;
-                #{ $self }__suboptions,
-                #{ $self }__suboptions:hover {
+                .suboptions,
+                .suboptions:hover {
                     display: block;
                     animation: scaling $drop-animation-time;
                 }
             }
+        }
+    }
+}
+
+.suboptions {
+    $self: &;
+    justify-content: center;
+    padding-top: $nav-padding-vertical;
+    @include shadow;
+    #{ $self }__option {
+        padding: $nav-padding-vertical $nav-padding-horizontal / 2
+            $nav-padding-vertical;
+        text-align: center;
+        &:hover {
+            background-color: $select-background-color;
+            @include heading-text-select;
         }
     }
 }
