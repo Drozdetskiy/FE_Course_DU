@@ -1,0 +1,104 @@
+$nav-padding-vertical: 16px;
+$nav-padding-horizontal: 40px;
+
+$select-text-color: #2f343a;
+$select-background-color: #dfe3ef;
+$select-border-color: #0070d2;
+$drop-animation-time: 0.3s;
+$heading-text-color: #597bae;
+
+@mixin font {
+    font-family: RobotoRegular, serif;
+    font-size: 14px;
+}
+
+@mixin box-underline {
+    border-bottom: 1px solid #dfe3ef;
+}
+
+@mixin selected-box-underline {
+    border-bottom: 2px solid $select-border-color;
+}
+
+@mixin shadow {
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+@mixin heading-text-select {
+    & > .heading-text {
+        color: $select-text-color;
+    }
+}
+
+.heading-text {
+    @include font;
+    color: $heading-text-color;
+    line-height: 16px;
+    letter-spacing: 0.4px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.wrapper {
+    width: 50%;
+    margin: auto;
+    padding-top: 50px;
+}
+
+.navbar {
+    $self: &;
+    @include box-underline;
+    #{ $self }__options {
+        justify-content: space-between;
+        display: flex;
+        padding-top: $nav-padding-vertical;
+        #{ $self }__option {
+            position: relative;
+            padding: 0 $nav-padding-horizontal $nav-padding-vertical;
+            .suboptions {
+                display: none;
+                position: absolute;
+                top: 100%;
+                min-width: 100%;
+                left: 0;
+            }
+            &:hover {
+                cursor: pointer;
+                @include selected-box-underline;
+                @include heading-text-select;
+                .suboptions,
+                .suboptions:hover {
+                    display: block;
+                    animation: scaling $drop-animation-time;
+                }
+            }
+        }
+    }
+}
+
+.suboptions {
+    $self: &;
+    justify-content: center;
+    padding-top: $nav-padding-vertical;
+    @include shadow;
+    #{ $self }__option {
+        padding: $nav-padding-vertical $nav-padding-horizontal / 2
+            $nav-padding-vertical;
+        text-align: center;
+        &:hover {
+            background-color: $select-background-color;
+            @include heading-text-select;
+        }
+    }
+}
+
+@keyframes scaling {
+    0% {
+        transform-origin: top;
+        transform: scaleY(0);
+    }
+    100% {
+        transform-origin: top;
+        transform: scaleY(1);
+    }
+}

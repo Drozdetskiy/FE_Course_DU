@@ -1,11 +1,28 @@
 {
-  "name": "FE_Course_DU",
+  "name": "fe_course_du",
   "version": "1.0.0",
   "main": "index.js",
-  "repository": "git@github.com:Drozdetskiy/FE_Course_DU.git",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/Drozdetskiy/FE_Course_DU.git"
+  },
   "author": "Mikhail Drozdetskiy <m.drozdetskiy@gmail.com>",
   "license": "MIT",
   "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-sass": "^4.1.0",
     "prettier": "2.0.5"
+  },
+  "bugs": {
+    "url": "https://github.com/Drozdetskiy/FE_Course_DU/issues"
+  },
+  "homepage": "https://github.com/Drozdetskiy/FE_Course_DU#readme",
+  "description": "my course",
+  "dependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "prettier": {
+    "tabWidth": 4
   }
 }
