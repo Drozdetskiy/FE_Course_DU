@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>JS Home work</title>
+  </head>
+  <body>
+    <form name="task1">
+      <label>Enter number</label>
+      <input name="number" type="text" />
+      <button type="submit">Проверить значение</button>
+    </form>
+
+  </body>
+  <script>
+    let task1Form = document.forms.task1;
+    task1Form.onsubmit = function(){
+      if (Number(task1Form.number.value) !== 10) {
+        alert('Введите число 10');
+        return false;
+      }
+      else
+        alert('Правильно!')
+    };
+  </script>
+</html>
